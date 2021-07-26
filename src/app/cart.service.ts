@@ -3,11 +3,8 @@ import { Product } from './products';
 
 @Injectable()
 export class CartService {
-
-  public items:Product[];
-  constructor() { 
-    this.items = [];
-  }
+  items: Product[] = [];
+  constructor() {}
 
   addToCart(product: Product) {
     this.items.push(product);
@@ -21,5 +18,4 @@ export class CartService {
     this.items = [];
     return this.items;
   }
-
 }
