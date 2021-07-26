@@ -1,7 +1,8 @@
 <p *ngIf="product">
  Product Name:  {{product.name}} <br/>
  Product Price: {{product.price}} <br/>
-
- 
+ <br/><br/>
+ <button (click)="AddToCart(product)" >AddToCart</button>
+ <br/><br/>
  <a [routerLink] = "['//products/']">go back</a>
 </p>
