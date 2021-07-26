@@ -22,7 +22,9 @@ import { ShippingPricesComponent } from './shipping-prices/shipping-prices.compo
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'products', component: ProductListComponent },
-      { path: 'cart', component: CartComponent }
+      { path: 'cart', component: CartComponent },
+      { path: 'shipping', component: ShippingPricesComponent }
+
     ])
   ],
   declarations: [
