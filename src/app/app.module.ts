@@ -8,6 +8,8 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-list/product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-list/product-details/product-details.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { CartServiceService } from './cart-service.service';
 
 @NgModule({
   imports: [
@@ -24,11 +26,13 @@ import { ProductDetailsComponent } from './product-list/product-details/product-
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ShoppingCartComponent
   ],
   bootstrap: [
     AppComponent
-  ]
+  ],
+  providers: [CartServiceService]
 })
 export class AppModule { }
 
